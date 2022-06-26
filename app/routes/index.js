@@ -8,7 +8,7 @@ exports.routes = [
       memorySize: 256,
       timeout: Duration.seconds(15),
       runtime: aws_lambda.Runtime.NODEJS_14_X,
-      entry: path.resolve(".app/routes/weather.js"),
+      entry: path.resolve("./app/routes/weather.js"),
       handler: "handler",
     },
     endpoint: "weather",
