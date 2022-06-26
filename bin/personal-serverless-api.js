@@ -1,13 +1,12 @@
 #!/usr/bin/env node
 
-const cdk = require('aws-cdk-lib');
+const cdk = require("aws-cdk-lib");
 // const { PersonalServerlessApiStack } = require('../lib/personal-serverless-api-stack');
-const {PersonalServerlessPipelineStack} = require("../lib/personal-serverless-pipeline-stack")
+const { PersonalServerlessPipelineStack } = require("../lib/personal-serverless-pipeline-stack");
 
 const app = new cdk.App();
 
-new PersonalServerlessPipelineStack(app, "PersonalServerlessPipelineStack", {
-});
+new PersonalServerlessPipelineStack(app, "PersonalServerlessPipelineStack", {});
 
 // new PersonalServerlessApiStack(app, 'PersonalServerlessApiStack', {
 //   /* If you don't specify 'env', this stack will be environment-agnostic.
